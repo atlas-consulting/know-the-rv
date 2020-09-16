@@ -1,0 +1,26 @@
+{
+  "name": "know-the-rv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlas-consulting/know-the-rv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlas-consulting/know-the-rv/issues"
+  },
+  "homepage": "https://github.com/atlas-consulting/know-the-rv#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10",
+    "typescript": "^4.0.2"
+  }
+}
