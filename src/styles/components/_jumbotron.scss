@@ -1,7 +1,7 @@
 .ktrv-hero {
   position: relative;
-  background-image: url("/assets/images/hero.png");
-  background-position: center;
+  background-image: url("/assets/images/hanson-lu-hero.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $green;
@@ -24,8 +24,15 @@
   }
   & h1 {
     font-weight: 500;
+    margin-bottom: $spacing-xs;
   }
-
+  & .ktrv-subtitle {
+    font-weight: 300;
+    margin-bottom: $spacing-xs;
+    & b {
+      font-weight: 500;
+    }
+  }
   & .ktrv-call {
     width: 100%;
     display: flex;
