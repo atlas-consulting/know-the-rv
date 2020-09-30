@@ -1,0 +1,12 @@
+.btn {
+  border-radius: 50px;
+  &-outline-secondary {
+    border-color: $orange;
+    color: $white;
+    &:hover {
+      color: $white;
+      border-color: $orange;
+      background-color: $orange;
+    }
+  }
+}

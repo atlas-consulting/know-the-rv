@@ -16,12 +16,64 @@
     <!-- Place favicon.ico in the root directory -->
 
     <meta name="theme-color" content="#fafafa" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div class="container-fluid">
-      <h2 class="h2 display-4">Hello, Know The RV</h2>
+    <!-- Nav Bar Start-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary navbar-collapse bg-primary text-white ktrv-nav"
+    >
+      <a class="navbar-brand bold" href="#">
+        <b>KTRV</b>
+      </a>
+      <div class="navbar ml-auto" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">Schedule an inspection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Certification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar End -->
+    <!-- Hero Start -->
+    <div class="jumbotron ktrv-hero text-light">
+      <!-- Phone Number -->
+      <div class="d-flex flex-row-reverse bd-highlight contact">
+        <div class="ktrv-call">
+          <div class="ktrv-number-wrapper">
+            <div>
+              <p>Call</p>
+              <a href="tel:6158047074" class="phone-number">1-(615)-555-5555</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="display-4">
+        You like seeing the world <br />on your own terms.
+      </h1>
+      <p class="lead">
+        <b>Know The RV</b> is your trusted companion in knowing your RV road
+        ready.
+      </p>
+      <a class="btn btn-outline-secondary btn-lg" href="#" role="button"
+        >Schedule an inspection today</a
+      >
     </div>
+    <!-- Hero End -->
+    <div class="container-fluid"></div>
     <script src="./src/app.ts"></script>
   </body>
 </html>
