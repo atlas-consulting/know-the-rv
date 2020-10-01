@@ -21,6 +21,7 @@
   "homepage": "https://github.com/atlas-consulting/know-the-rv#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
     "sass": "^1.26.10",
     "typescript": "^4.0.2"
   },
