@@ -1,4 +1,6 @@
 nav.ktrv-nav {
+  padding-left: $spacing-lg;
+  padding-right: $spacing-lg;
   & a.active {
     color: $orange !important;
   }

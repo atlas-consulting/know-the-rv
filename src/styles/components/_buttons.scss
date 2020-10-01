@@ -9,4 +9,15 @@
       background-color: $orange;
     }
   }
+  &-secondary {
+    border-color: $orange;
+    background-color: $orange;
+    color: $white;
+    &:hover {
+      font-weight: 500;
+      border-color: $orange;
+      background-color: $orange;
+      transform: translate3d(1px, 1px, 0);
+    }
+  }
 }

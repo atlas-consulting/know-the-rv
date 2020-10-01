@@ -6,8 +6,7 @@
   background-size: cover;
   background-color: $green;
   min-height: 680px;
-  padding-left: $spacing-reg;
-  padding-right: $spacing-reg;
+  margin-bottom: 0;
   &::after {
     position: absolute;
     z-index: 0;
@@ -37,14 +36,12 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-right: -4rem;
     margin-bottom: $spacing-small;
     & .ktrv-number-wrapper {
       width: 66%;
       border-bottom: 1px solid $orange;
       display: flex;
       justify-content: flex-end;
-      padding-right: 2rem;
       & .phone-number {
         font-size: 2rem;
         color: $white;
