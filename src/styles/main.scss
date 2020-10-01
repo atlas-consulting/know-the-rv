@@ -2,6 +2,15 @@
 /*                                   Imports                                  */
 /* -------------------------------------------------------------------------- */
 @import "./abstract/variables";
-@import "./layout/grid";
-@import "./components/buttons";
 @import "./vendors";
+@import "./layout/grid";
+@import "./components/navigation";
+@import "./components/buttons";
+@import "./components/calendar";
+@import "./components/jumbotron";
+@import "./components/pricing-table";
+@import "./components/footer";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}

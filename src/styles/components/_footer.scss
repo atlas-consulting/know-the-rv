@@ -1,0 +1,14 @@
+footer {
+  min-height: 180px;
+  background-color: $green;
+  width: 100%;
+  position: relative;
+
+  & .certifications {
+    position: absolute;
+    top: -40px;
+    & img {
+      height: 80px;
+    }
+  }
+}

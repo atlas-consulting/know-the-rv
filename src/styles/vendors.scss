@@ -1,1 +1,17 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+.text-primary {
+  color: $green;
+}
+.bg-primary {
+  background-color: $green !important;
+}
+.text-secondary {
+  color: $orange;
+}
+.bg-secondary {
+  background-color: $orange !important;
+}
+.btn-outline-secondary {
+  border-color: $orange;
+  color: $white;
+}
