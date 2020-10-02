@@ -217,23 +217,33 @@
     ></iframe>
     <!-- Map End -->
     <!-- Footer Start -->
-    <footer class="text-center">
+    <footer
+      class="text-center align-items-center d-flex text-light justify-content-center font-weight-lighter"
+    >
       <!-- certifications -->
       <div class="certifications ml-4">
         <img src="/assets/images/nrvia.jpg" alt="" />
       </div>
-      <p class="text-light">
-        Photography by
-        <a class="text-light" href="https://unsplash.com/@rotaalternativa"
-          >Rota Alternativa</a
-        >
-        and
-        <a class="text-light" href="https://unsplash.com/@hansonluu"
-          >Hanson Lu</a
-        >
-      </p>
+      <div>
+        <p class="mb-1">Copyright © <span id="copyright-year">2020</span></p>
+        <p>
+          Photography by
+          <a class="text-light" href="https://unsplash.com/@rotaalternativa"
+            >Rota Alternativa</a
+          >
+          and
+          <a class="text-light" href="https://unsplash.com/@hansonluu"
+            >Hanson Lu</a
+          >
+        </p>
+      </div>
     </footer>
     <!-- Footer End -->
     <script src="./src/app.ts"></script>
+    <script>
+      document.getElementById(
+        "copyright-year"
+      ).innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
