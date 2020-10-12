@@ -11,6 +11,10 @@
 @import "./components/pricing-table";
 @import "./components/footer";
 
+html {
+  overflow-x: hidden;
+}
 body {
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
