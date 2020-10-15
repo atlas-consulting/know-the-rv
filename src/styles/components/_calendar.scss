@@ -1,5 +1,4 @@
 .ktrv-calendar {
-  justify-content: space-between;
   flex-wrap: nowrap;
   padding: $spacing-reg 0 $spacing-lg;
   justify-content: flex-end;
@@ -11,15 +10,18 @@
   & .calendar-widget {
     position: absolute;
     left: 0;
+    top: 0;
     z-index: 2;
-    top: -6rem;
-    min-height: 400px;
+    min-height: 200px;
     overflow: hidden;
     background-color: $green;
     background-position: center;
     background-size: cover;
     background-image: url("/assets/images/wood-pattern.png");
     border-radius: 16px;
+    &.mt-n5 {
+      margin-top: -6rem !important;
+    }
   }
   & .ktrv-image {
     position: relative;
@@ -38,8 +40,21 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 140px;
+  max-height: 140px;
   & img {
-    width: 100%;
+    width: 105%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ktrv-calendar {
+    padding: $spacing-small 0 0;
+    .ktrv-image {
+      height: 200px;
+    }
+    .calendar-widget {
+      position: relative;
+      min-height: 200px;
+    }
   }
 }

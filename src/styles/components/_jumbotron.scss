@@ -7,6 +7,8 @@
   background-color: $green;
   min-height: 680px;
   margin-bottom: 0;
+  margin-top: 72px;
+  border-radius: 0 !important;
   &::after {
     position: absolute;
     z-index: 0;
@@ -36,7 +38,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: $spacing-small;
     & .ktrv-number-wrapper {
       width: 66%;
       border-bottom: 1px solid $orange;
@@ -55,5 +56,11 @@
       font-weight: 300;
       margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .ktrv-hero {
+    min-height: calc(100% - 72px);
   }
 }

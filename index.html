@@ -20,65 +20,101 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c246067479.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!-- Nav Bar Start-->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary navbar-collapse bg-primary text-white ktrv-nav"
+      class="position-fixed navbar navbar-expand-lg navbar-dark bg-primary navbar-collapse bg-primary text-white ktrv-nav"
     >
-      <a class="navbar-brand bold" href="#">
+      <a class="navbar-brand bold px-2" href="#">
         <b>KTRV</b>
       </a>
-      <div class="navbar ml-auto" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
+      <div class="navbar ml-auto pr-0 flex-column">
+        <ul class="navbar-nav flex-md-row d-none d-md-flex" id="navbar-links">
+          <li class="nav-item px-md-2 active">
             <a class="nav-link active" href="#">Schedule an inspection</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-md-2">
             <a class="nav-link" href="#">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-md-2">
             <a class="nav-link" href="#">Certification</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-md-2">
             <a class="nav-link" href="#">FAQ</a>
           </li>
         </ul>
+        <!-- Hambuger Menu -->
+        <div class="d-md-none p-1 align-self-end">
+          <a href="tel:6155555555" class="phone-number text-light">
+            <i class="fas fa-phone p-2"></i>
+          </a>
+          <i id="menu-icon" class="fas fa-bars p-2"></i>
+        </div>
       </div>
     </nav>
     <!-- NavBar End -->
     <!-- Hero Start -->
-    <div class="jumbotron ktrv-hero text-light">
-      <div class="container">
-        <!-- Phone Number -->
-        <div class="d-flex flex-row-reverse bd-highlight contact">
-          <div class="ktrv-call">
-            <div class="ktrv-number-wrapper">
-              <div>
-                <p>Call</p>
-                <a href="tel:6158047074" class="phone-number"
-                  >1-(615)-555-5555</a
-                >
-              </div>
+    <div
+      class="jumbotron ktrv-hero text-light d-flex align-items-center flex-md-column"
+    >
+      <!-- Phone Number -->
+      <div
+        class="container flex-row-reverse bd-highlight contact d-none d-md-flex"
+      >
+        <div
+          class="ktrv-call animate__animated animate__fadeIn animate__delay-4s"
+        >
+          <div class="ktrv-number-wrapper">
+            <div>
+              <p>Call</p>
+              <a href="tel:6155555555" class="phone-number">1-(615)-555-5555</a>
             </div>
           </div>
         </div>
-        <h1 class="display-4">
-          You like seeing the world <br />on your own terms.
-        </h1>
-        <p class="lead font-weight-lighter">
-          <span class="font-weight-normal">Know The RV</span> is your trusted
-          companion in<br />
-          ensuring your RV is road ready.
-        </p>
-        <a
-          class="btn btn-outline-secondary btn-lg px-5"
-          href="#"
-          role="button"
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
-          >Schedule an inspection today</a
-        >
+      </div>
+      <!-- Hero Text -->
+      <div class="container pb-5 pt-md-5">
+        <!-- <div class="row"> -->
+          <div class="col-md-8">
+            <h1
+              class="display-md-4 display-8 animate__animated animate__fadeInLeft"
+            >
+              Buy with confidence when you Know The RV
+            </h1>
+            <p
+              class="lead font-weight-md-lighter animate__animated animate__fadeIn animate__delay-2s"
+            >
+              <span class="font-weight-normal">Know The RV</span> is the
+              trusted companion for your <br/>next RV purchase.
+            </p>
+            <!-- Fill btn -->
+            <a
+              class="d-md-none d-block btn btn-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
+              href="#"
+              role="button"
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
+              >Schedule Today!</a
+            >
+            <!-- Outline btn -->
+            <a
+              class="d-none d-md-inline btn btn-outline-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
+              href="#"
+              role="button"
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
+              >Schedule an inspection today</a
+            >
+          </div>
+        </div>
       </div>
     </div>
     <!-- Hero End -->
@@ -86,9 +122,26 @@
     <div class="container-fluid position-relative">
       <div class="container ktrv-calendar-wrapper">
         <div class="row ktrv-calendar text-light">
-          <div class="col-7 calendar-widget p-5">
-            <h2>Book an inspection</h2>
-            <p class="font-weight-light">Limited time, book soon!</p>
+          <div class="col-md-7 calendar-widget p-5 mt-md-n5">
+            <h2 class="font-weight-bold">The Know The RV Standard:</h2>
+            <!-- <p class="font-weight-light">Limited time, book soon!</p> -->
+            <ul class="list-unstyled mt-3 mb-4 ">
+              <li class="mb-3">
+                <h5><i class="fas fa-headset mr-3"></i>Customer first service</h5>
+              </li>
+              <li class="mb-3">
+                <h5><i class="fas fa-coins mr-3"></i>No hidden fees — Ever</h5>
+              </li>
+              <li class="mb-3">
+                <h5><i class="fas fa-user-shield mr-3"></i>NRVIA certified professionals </h5>
+              </li>
+              <li class="mb-3">
+                <h5><i class="fas fa-file-alt mr-3"></i>Simple, thorough reporting </h5>
+              </li>
+              <li class="mb-3">
+                <h5><i class="fas fa-bolt mr-3"></i>24 hour post inspection turnaround</h5>
+              </li>
+            </ul>
             <!-- Calendly link widget begin -->
             <link
               href="https://assets.calendly.com/assets/external/widget.css"
@@ -108,12 +161,12 @@
           </div>
         </div>
         <div class="row ktrv-calendar">
-          <div class="col-7 ktrv-image"></div>
+          <div class="col-md-7 ktrv-image"></div>
         </div>
       </div>
 
       <!-- Paper background -->
-      <div class="ripped-paper">
+      <div class="ripped-paper d-flex align-items-start justify-content-center">
         <img
           src="/assets/images/ripped-paper.png"
           alt="ripped paper background"
@@ -122,7 +175,7 @@
     </div>
     <!-- Calendar Section End -->
     <!-- Pricing Start -->
-    <div class="container-fluid ktrv-pricing">
+    <div class="container-fluid ktrv-pricing py-2">
       <div class="container">
         <!-- Section Title -->
         <div class="row">
@@ -136,79 +189,119 @@
           </div>
         </div>
         <!-- Pricing Title -->
-        <div class="container">
+        <div class="container px-0 px-md-3">
           <div class="card-deck text-center">
-            <!-- Basic -->
-            <div class="card mb-4 box-shadow">
+            <!-- Life safety -->
+            <div class="card mb-4">
               <div class="card-header bg-primary text-light">
-                <h4 class="my-0 font-weight-normal">Basic</h4>
+                <h3 class="my-0 font-weight-normal">Life safety</h3>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">$100</h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Inspection detail 1</li>
-                  <li>Inspection detail 2</li>
-                  <li>Inspection detail 3</li>
-                  <li>Inspection detail 4</li>
-                </ul>
-                <button
-                  type="button"
-                  class="btn btn-lg btn-block btn-secondary"
+                <h4
+                  class="card-title pricing-card-title display-4 font-weight-light"
                 >
+                  $100
+                </h4>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 1
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 2
+                  </li>
+                  <li class="text-muted mb-1">
+                    <i class="far fa-times-circle mr-2"></i>Inspection detail 3
+                  </li>
+                  <li class="text-muted mb-1">
+                    <i class="far fa-times-circle mr-2"></i>Inspection detail 4
+                  </li>
+                  <li class="text-muted mb-1">
+                    <i class="far fa-times-circle mr-2"></i>Inspection detail 5
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-lg px-5 btn-secondary">
                   Schedule Now
                 </button>
               </div>
             </div>
-            <!-- Deluxe+ -->
-            <div class="card mb-4 box-shadow">
+            <!-- Essential -->
+            <div class="card mb-4">
               <div class="card-header bg-primary text-light">
-                <h4 class="my-0 font-weight-normal">Deluxe+</h4>
+                <h3 class="my-0 font-weight-normal">Essential</h3>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">$500</h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Inspection detail 1</li>
-                  <li>Inspection detail 2</li>
-                  <li>Inspection detail 3</li>
-                  <li>Inspection detail 4</li>
-                </ul>
-                <button
-                  type="button"
-                  class="btn btn-lg btn-block btn-secondary"
+                <h4
+                  class="card-title pricing-card-title display-4 font-weight-light"
                 >
+                  $500
+                </h4>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 1
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 2
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 3
+                  </li>
+                  <li class="text-muted mb-1">
+                    <i class="far fa-times-circle mr-2"></i>Inspection detail 4
+                  </li>
+                  <li class="text-muted mb-1">
+                    <i class="far fa-times-circle mr-2"></i>Inspection detail 5
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-lg px-5 btn-secondary">
                   Schedule Now
                 </button>
               </div>
             </div>
-            <!-- Pro -->
-            <div class="card mb-4 box-shadow">
+            <!-- Know The RV -->
+            <div class="card mb-4">
               <div class="card-header bg-primary text-light">
-                <h4 class="my-0 font-weight-normal">Pro</h4>
+                <h3 class="my-0 font-weight-normal">Know The RV</h3>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">$1000</h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Inspection detail 1</li>
-                  <li>Inspection detail 2</li>
-                  <li>Inspection detail 3</li>
-                  <li>Inspection detail 4</li>
-                </ul>
-                <button
-                  type="button"
-                  class="btn btn-lg btn-block btn-secondary"
+                <h4
+                  class="card-title pricing-card-title display-4 font-weight-light"
                 >
+                  $1000
+                </h4>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 1
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 2
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 3
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 4
+                  </li>
+                  <li class="mb-1">
+                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 5
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-lg px-5 btn-secondary">
                   Schedule Now
                 </button>
               </div>
             </div>
           </div>
         </div>
+        <div class="alert alert-dark" role="alert">
+          <i class="fas fa-plus text-primary p-2"></i> Add a
+          <b class="text-primary">Fuel Analysis</b> to any inspection for $25.99
+        </div>
       </div>
     </div>
     <!-- Pricing End -->
     <!-- Map Start -->
     <iframe
-      width="600"
+      width="100%"
       height="450"
       frameborder="0"
       style="border: 0"
@@ -217,23 +310,33 @@
     ></iframe>
     <!-- Map End -->
     <!-- Footer Start -->
-    <footer class="text-center">
+    <footer
+      class="text-center align-items-center d-flex text-light justify-content-center font-weight-lighter"
+    >
       <!-- certifications -->
       <div class="certifications ml-4">
         <img src="/assets/images/nrvia.jpg" alt="" />
       </div>
-      <p class="text-light">
-        Photography by
-        <a class="text-light" href="https://unsplash.com/@rotaalternativa"
-          >Rota Alternativa</a
-        >
-        and
-        <a class="text-light" href="https://unsplash.com/@hansonluu"
-          >Hanson Lu</a
-        >
-      </p>
+      <div>
+        <p class="mb-1">Copyright © <span id="copyright-year">2020</span></p>
+        <p>
+          Photography by
+          <a class="text-light" href="https://unsplash.com/@rotaalternativa"
+            >Rota Alternativa</a
+          >
+          and
+          <a class="text-light" href="https://unsplash.com/@hansonluu"
+            >Hanson Lu</a
+          >
+        </p>
+      </div>
     </footer>
     <!-- Footer End -->
     <script src="./src/app.ts"></script>
+    <script>
+      document.getElementById(
+        "copyright-year"
+      ).innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
