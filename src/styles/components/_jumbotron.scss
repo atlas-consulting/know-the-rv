@@ -59,8 +59,30 @@
   }
 }
 
+.ktrv-full-width-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  align-self: center;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 0;
+  &-wrapper {
+    min-height: 500px;
+    border-radius: 0 !important;
+    background-color: darken($green, 5%);
+  }
+  &-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 @media (max-width: 767px) {
   .ktrv-hero {
     min-height: calc(100% - 72px);
+  }
+  .ktrv-full-width-image {
+    min-height: 400px;
   }
 }
