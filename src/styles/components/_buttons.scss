@@ -15,8 +15,19 @@
     color: $white;
     &:hover {
       font-weight: 500;
-      border-color: $orange;
-      background-color: $orange;
+      border-color: lighten($orange, 7%);
+      background-color: lighten($orange, 7%);
+      transform: translate3d(1px, 1px, 0);
+    }
+  }
+  &-primary {
+    border-color: $green;
+    background-color: $green;
+    color: $white;
+    &:hover {
+      font-weight: 500;
+      border-color: lighten($green, 5%);
+      background-color: lighten($green, 5%);
       transform: translate3d(1px, 1px, 0);
     }
   }

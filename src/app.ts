@@ -4,6 +4,7 @@ class KnowTheRV {
   initialize() {
     console.info("Application initialized");
     this.initMobileMenu();
+    this.handleNavElementsActivation();
   }
   initMobileMenu() {
     const navLinks = document.getElementById("navbar-links");
@@ -18,6 +19,46 @@ class KnowTheRV {
         ? navLinks?.classList.remove(mobileCssClass)
         : navLinks?.classList.add(mobileCssClass);
     });
+  }
+  startCarousel() {
+    let index = 0;
+    const slides = document.querySelectorAll(
+      ".carousel .carousel-inner .carousel-item"
+    );
+    setInterval(() => {
+      const lastSlide = slides[index];
+      index = index + 1 < slides.length ? index + 1 : 0;
+      const nextSlide = slides[index];
+      lastSlide.classList.remove("animate__slideInRight");
+      lastSlide.classList.add("animate__slideOutLeft");
+      setTimeout(() => {
+        lastSlide.classList.remove("active");
+        lastSlide.classList.remove("animate__slideOutLeft");
+        nextSlide.classList.add("active");
+        nextSlide.classList.add("animate__slideInRight");
+      }, 600);
+    }, 8000);
+  }
+  handleNavElementsActivation() {
+    const navElements = document.querySelectorAll(".nav-link");
+    const viewableEls = ["#home", "#services", "#about-us"]
+      .map((id) => document.querySelector(id))
+      .filter((el) => !!el);
+    const viewportObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          const id = entries[0].target.id;
+          console.log({ id });
+          navElements.forEach((el) => {
+            el.getAttribute("href") === `#${id}`
+              ? el.classList.add("active")
+              : el.classList.remove("active");
+          });
+        }
+      },
+      { threshold: [0.3] }
+    );
+    viewableEls.forEach((el) => viewportObserver.observe(el!));
   }
 }
 
