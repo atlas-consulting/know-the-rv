@@ -44,17 +44,23 @@
             <a class="nav-link active" href="#">Schedule an inspection</a>
           </li>
           <li class="nav-item px-md-2">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item px-md-2">
-            <a class="nav-link" href="#">Certification</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item px-md-2">
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item px-md-2">
+            <a class="nav-link" href="mailto:#">Contact Us</a>
           </li>
         </ul>
         <!-- Hambuger Menu -->
         <div class="d-md-none p-1 align-self-end">
+          <a href="mailto:test@test.com" class="phone-number text-light">
+            <i class="fas fa-envelope p-2"></i>
+          </a>
           <a href="tel:6155555555" class="phone-number text-light">
             <i class="fas fa-phone p-2"></i>
           </a>
@@ -64,8 +70,9 @@
     </nav>
     <!-- NavBar End -->
     <!-- Hero Start -->
+    <div id="home" class="ktrv-hero-wrapper">
     <div
-      class="jumbotron ktrv-hero text-light d-flex align-items-center flex-md-column"
+    class="jumbotron container-fluid ktrv-hero text-light d-flex align-items-center flex-md-column"
     >
       <!-- Phone Number -->
       <div
@@ -76,7 +83,7 @@
         >
           <div class="ktrv-number-wrapper">
             <div>
-              <p>Call</p>
+              <p>Have questions? Call us!</p>
               <a href="tel:6155555555" class="phone-number">1-(615)-555-5555</a>
             </div>
           </div>
@@ -89,7 +96,7 @@
             <h1
               class="display-md-4 display-8 animate__animated animate__fadeInLeft"
             >
-              Buy with confidence when you Know The RV
+              Whether you are buying, selling, or just want to <span class="text-secondary font-weight-bold">Know the RV</span> before a big adventure, we want to help! 
             </h1>
             <p
               class="lead font-weight-md-lighter animate__animated animate__fadeIn animate__delay-2s"
@@ -97,53 +104,56 @@
               <span class="font-weight-normal">Know The RV</span> is the
               trusted companion for your <br/>next RV purchase.
             </p>
-            <!-- Fill btn -->
+            <!-- Fill btn Mobile -->
             <a
               class="d-md-none d-block btn btn-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
               href="#"
               role="button"
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
-              >Schedule Today!</a
+              >Schedule Now!</a
             >
-            <!-- Outline btn -->
+            <!-- Btn -->
             <a
-              class="d-none d-md-inline btn btn-outline-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
+              class="d-none d-md-inline btn btn-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
               href="#"
               role="button"
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
-              >Schedule an inspection today</a
+              >Schedule YOUR Inspection Now!</a
             >
           </div>
         </div>
       </div>
     </div>
+    </div>
     <!-- Hero End -->
     <!-- Calendar Section Start -->
-    <div class="container-fluid position-relative">
+    <div class="container-fluid position-relative bg-white">
       <div class="container ktrv-calendar-wrapper">
         <div class="row ktrv-calendar text-light">
           <div class="col-md-7 calendar-widget p-5 mt-md-n5">
-            <h2 class="font-weight-bold">The Know The RV Standard:</h2>
+            <h2 class="font-weight-bold">Our promise to you:</h2>
+            <!-- So you’ve found the perfect RV for your needs and the last thing you want to do is have to spend more money on unexpected repairs or services. You wouldn’t buy a house without a home inspection, why should an RV purchase be any different?   -->
+
             <!-- <p class="font-weight-light">Limited time, book soon!</p> -->
             <ul class="list-unstyled mt-3 mb-4 ">
               <li class="mb-3">
-                <h5><i class="fas fa-headset mr-3"></i>Customer first service</h5>
+                <h5><i class="fas fa-headset mr-3"></i>Quick responses times</h5>
               </li>
               <li class="mb-3">
                 <h5><i class="fas fa-coins mr-3"></i>No hidden fees — Ever</h5>
               </li>
               <li class="mb-3">
-                <h5><i class="fas fa-user-shield mr-3"></i>NRVIA certified professionals </h5>
+                <h5><i class="fas fa-user-shield mr-3"></i>NRVIA certified professionals</h5>
               </li>
               <li class="mb-3">
-                <h5><i class="fas fa-file-alt mr-3"></i>Simple, thorough reporting </h5>
+                <h5><i class="fas fa-file-alt mr-3"></i>Accurate reporting regardless of sellers</h5>
               </li>
               <li class="mb-3">
-                <h5><i class="fas fa-bolt mr-3"></i>24 hour post inspection turnaround</h5>
+                <h5><i class="fas fa-bolt mr-3"></i>48 hour post inspection turnaround</h5>
               </li>
             </ul>
             <!-- Calendly link widget begin -->
-            <link
+            <!-- <link
               href="https://assets.calendly.com/assets/external/widget.css"
               rel="stylesheet"
             />
@@ -156,7 +166,7 @@
               href=""
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
               >Schedule your inspection time</a
-            >
+            > -->
             <!-- Calendly link widget end -->
           </div>
         </div>
@@ -175,32 +185,56 @@
     </div>
     <!-- Calendar Section End -->
     <!-- Pricing Start -->
-    <div class="container-fluid ktrv-pricing py-2">
+    <div id="services" class="container-fluid ktrv-pricing py-4">
       <div class="container">
         <!-- Section Title -->
         <div class="row">
           <div class="col">
-            <h2 class="text-dark font-weight-bold pt-4">
-              What all goes into an RV inspection?
+            <h1 class=" text-dark m-0 pt-4 font-weight-bold">Know the RV</h1>
+            <h2 class="text-dark font-weight-bold">
+             makes scheduling your next RV inspection simple!
             </h2>
-            <p class="font-weight-light">
-              Like most thing in life, it depends.
+          </div>
+        </div>
+        <!-- Step 1 -->
+        <div class="row mt-4">
+          <div class="col">
+            <h4 class="text-primary font-weight-bold pt-4">
+              <i class="far fa-calendar-check mr-2"></i>
+              Step 1: Request a date 
+            </h4>
+            <p class="">
+              Using our <a class="text-primary font-weight-bold">simple calendar</a>, check availability and choose the timeslot that works best for you. 
+              Once we receive your reservation, we will send some follow up information to iron out the details!
+            </p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="row mt-4">
+          <div class="col">
+            <h4 class="text-primary font-weight-bold pt-4">
+              <i class="fas fa-caravan mr-2"></i>
+              Step 2: Choose an inspection package
+            </h4>
+            <p class="">
+              We offer both pre-purchase and pre-sale inspections for all types of RVs at different levels of detail. Based on your specific needs, 
+              check out our availible tiers and choose the package that best fits.
             </p>
           </div>
         </div>
         <!-- Pricing Title -->
-        <div class="container px-0 px-md-3">
+        <div class="container px-0 px-md-3 mt-4" id="services">
           <div class="card-deck text-center">
             <!-- Life safety -->
             <div class="card mb-4">
               <div class="card-header bg-primary text-light">
-                <h3 class="my-0 font-weight-normal">Life safety</h3>
+                <h3 class="my-0 font-weight-normal">Life Safety</h3>
               </div>
               <div class="card-body">
                 <h4
                   class="card-title pricing-card-title display-4 font-weight-light"
                 >
-                  $100
+                  $349
                 </h4>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li class="mb-1">
@@ -233,7 +267,7 @@
                 <h4
                   class="card-title pricing-card-title display-4 font-weight-light"
                 >
-                  $500
+                $699
                 </h4>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li class="mb-1">
@@ -266,11 +300,11 @@
                 <h4
                   class="card-title pricing-card-title display-4 font-weight-light"
                 >
-                  $1000
+                $849
                 </h4>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li class="mb-1">
-                    <i class="fas fa-check-circle mr-2"></i>Inspection detail 1
+                    <i class="fas fa-check-circle mr-2"></i>Fluid Analysis
                   </li>
                   <li class="mb-1">
                     <i class="fas fa-check-circle mr-2"></i>Inspection detail 2
@@ -296,31 +330,82 @@
           <i class="fas fa-plus text-primary p-2"></i> Add a
           <b class="text-primary">Fuel Analysis</b> to any inspection for $25.99
         </div>
+        <p class="font-weight-light"><b>Travel Fee:</b>  For travel over 40 miles: $50 + $1.25 per mile.  No fee for locations within 40 miles.</p>
+        <div class="d-flex flex-wrap">
+          <p class="mr-4">Motorhome Inspection Points Sheet <a href="#">(download)</a></p>
+          <p>Towables Inspection Points Sheet <a href="#">(download)</a></p>
+        </div>
+        <!-- Step 3 -->
+        <div class="row mt-4">
+          <div class="col">
+            <h4 class="text-primary font-weight-bold pt-4">
+              <i class="fas fa-clipboard-check mr-2"></i>
+              Step 3: Get to know your RV
+            </h4>
+            <p >
+              The last thing to do is get to Know the RV! Inspections tend to take about 1-2 hours on average. 
+              Once Know the RV has completed your inspection, you will receive your NRVIA certified inspection report in less than 48 hours!
+            </p>
+          </div>
+        </div>
+
+        <!-- Schedule Button -->
+        <div class="text-center py-4 my-5">
+          <a
+                class="d-none d-md-inline btn btn-primary py-4 my-4 btn-lg px-5 font-weight-bold "
+                href="#"
+                role="button"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
+                >Schedule YOUR Inspection Today!</a
+              >
+        </div>
       </div>
     </div>
     <!-- Pricing End -->
-    <!-- Map Start -->
-    <iframe
-      width="100%"
-      height="450"
-      frameborder="0"
-      style="border: 0"
-      src="https://www.google.com/maps/embed/v1/place?q=nashville&key=..."
-      allowfullscreen
-    ></iframe>
-    <!-- Map End -->
-    <!-- Full Width Image Start -->
+    <!-- Mission Statement Start -->
     <div class="d-flex ktrv-full-width-image-wrapper overflow-hidden position-relative container-fluid">
       <img class="ktrv-full-width-image" src="/assets/images/fabian-Xe1SA5kXw5M-unsplash.jpg"/>
-      <div class="container d-flex align-items-center justify-content-center flex-column text-center text-light ktrv-full-width-image-content ">
-        <h3 class="m-0 p-0">Know The RV mission statement</h3>
-        <!-- <p class="text-light">- Tim Timmy</p> -->
+
+      <div class="col-12 col-md-8 m-auto text-center text-light ktrv-full-width-image-content p-4">
+      <h3 class="display-5">You wouldn’t buy a house without a home inspection... <br>Why should your RV purchase be any different?</h3>
       </div>
+      <!-- <div class="carousel slide m-auto d-flex align-items-center justify-content-center" data-ride="carousel">
+        <div class="carousel-inner row">
+          <div class="carousel-item animate__animated animate__slideInRight col-12 col-md-6 m-auto active text-center text-light ktrv-full-width-image-content p-4">
+              <h4 class="m-0 p-0">"Know the RV went above and beyond to make sure my RV-to-be was in tip-top shape!"</h4>
+              <p class="text-light">- Tim Timmy</p>
+          </div>
+          <div class="carousel-item animate__animated text-center col-12 col-md-6 m-auto text-light ktrv-full-width-image-content p-4">
+              <h4 class="m-0 p-0">"I had a great experience! The entire process went smoothly and I had my report in my hands within 24 hours. Way faster than I expected!"</h4>
+              <p class="text-light">- Bill Billy</p>
+          </div>
+          <div class="carousel-item animate__animated text-center col-12 col-md-6 m-auto text-light ktrv-full-width-image-content p-4">
+              <h4 class="m-0 p-0">"Know the RV was very easy to work with. Scheduling was simple and everything was said and done within a week of requesting my inspection!"</h4>
+              <p class="text-light">- Greg Gregory</p>
+          </div>
+        </div>
+      </div> -->
     </div>
-    <!-- Full Width Image End -->
+    <!-- Mission Statement End -->
+    <!-- About us Start -->
+      <div id="about-us" class="container-fluid bg-white">
+      <div class="container py-5">
+        <h2 class="py-2">Who Are We?</h2>
+        <p>
+          <b>Know the RV</b> is a full service RV inspection company located in Franklin, Tennessee. We serve all of Tennessee as well as the surrounding states. We provide an accurate, thorough and unbiased inspection and report for our clients. Our reporting is in accordance with the NRVIA code of ethics and standards of practice. 
+        </p> 
+          <h3 class="pt-2">Inspections:</h3>
+          <p>We offer both pre-purchase and pre-sale inspections for all types of RVs at different levels of detail based on your specific needs. Click here to schedule yours today!</p>
+          <h3 class="pt-2">Reports:</h3>
+          <p>Our detailed reports will give you an overview of all components of your RV, as well as point out any trouble spots. We offer both dealership and private party inspections. Regardless of the seller, we work on behalf of the buyer to generate accurate inspection reports. Click here to schedule your inspection now!</p>
+          </p>
+      </div>
+      </div>
+
+    <!-- About us End -->
     <!-- Footer Start -->
     <footer
-      class="text-center align-items-center d-flex text-light justify-content-center font-weight-lighter"
+      class="container-fluid text-center bg-primary align-items-center d-flex text-light justify-content-center font-weight-lighter"
     >
       <!-- certifications -->
       <div class="certifications ml-4">

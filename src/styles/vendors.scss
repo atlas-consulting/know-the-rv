@@ -1,4 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+.container,
+.container-fluid {
+  z-index: 5;
+  position: relative;
+}
 .text-primary {
   color: $green !important;
 }
