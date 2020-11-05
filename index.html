@@ -21,6 +21,10 @@
       rel="stylesheet"
     />
     <link
+              href="https://assets.calendly.com/assets/external/widget.css"
+              rel="stylesheet"
+            />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
@@ -36,7 +40,7 @@
       class="position-fixed navbar navbar-expand-lg navbar-dark bg-primary navbar-collapse bg-primary text-white ktrv-nav"
     >
       <a class="navbar-brand bold px-2" href="#">
-        <b>KTRV</b>
+        <b>Know The RV</b>
       </a>
       <div class="navbar ml-auto pr-0 flex-column">
         <ul class="navbar-nav flex-md-row d-none d-md-flex" id="navbar-links">
@@ -71,27 +75,26 @@
     <!-- NavBar End -->
     <!-- Hero Start -->
     <div id="home" class="ktrv-hero-wrapper">
-    <div
-    class="jumbotron container-fluid ktrv-hero text-light d-flex align-items-center flex-md-column"
-    >
-      <!-- Phone Number -->
       <div
-        class="container flex-row-reverse bd-highlight contact d-none d-md-flex"
+      class="jumbotron container-fluid ktrv-hero text-light d-flex align-items-center flex-md-column"
       >
+        <!-- Phone Number -->
         <div
-          class="ktrv-call animate__animated animate__fadeIn animate__delay-4s"
+          class="container flex-row-reverse bd-highlight contact d-none d-md-flex"
         >
-          <div class="ktrv-number-wrapper">
-            <div>
-              <p>Have questions? Call us!</p>
-              <a href="tel:6155555555" class="phone-number">1-(615)-555-5555</a>
+          <div
+            class="ktrv-call animate__animated animate__fadeIn animate__delay-4s"
+          >
+            <div class="ktrv-number-wrapper">
+              <div>
+                <p>Have questions? Call us!</p>
+                <a href="tel:6155555555" class="phone-number">1-(615)-555-5555</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Hero Text -->
-      <div class="container pb-5 pt-md-5">
-        <!-- <div class="row"> -->
+        <!-- Hero Text -->
+        <div class="container pb-5 pt-md-5">
           <div class="col-md-8">
             <h1
               class="display-md-4 display-8 animate__animated animate__fadeInLeft"
@@ -102,7 +105,7 @@
               class="lead font-weight-md-lighter animate__animated animate__fadeIn animate__delay-2s"
             >
               <span class="font-weight-normal">Know The RV</span> is the
-              trusted companion for your <br/>next RV purchase.
+              trusted companion for your <br/>next RV inspection.
             </p>
             <!-- Fill btn Mobile -->
             <a
@@ -123,7 +126,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- Hero End -->
     <!-- Calendar Section Start -->
@@ -153,20 +155,12 @@
               </li>
             </ul>
             <!-- Calendly link widget begin -->
-            <!-- <link
-              href="https://assets.calendly.com/assets/external/widget.css"
-              rel="stylesheet"
-            />
-            <script
-              src="https://assets.calendly.com/assets/external/widget.js"
-              type="text/javascript"
-            ></script>
             <a
               class="btn btn-secondary"
               href=""
               onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
               >Schedule your inspection time</a
-            > -->
+            >
             <!-- Calendly link widget end -->
           </div>
         </div>
@@ -204,7 +198,10 @@
               Step 1: Request a date 
             </h4>
             <p class="">
-              Using our <a class="text-primary font-weight-bold">simple calendar</a>, check availability and choose the timeslot that works best for you. 
+              Using our 
+              <a class="text-primary font-weight-bold" 
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
+              >simple calendar</a>, check availability and choose the timeslot that works best for you. 
               Once we receive your reservation, we will send some follow up information to iron out the details!
             </p>
           </div>
@@ -332,8 +329,8 @@
         </div>
         <p class="font-weight-light"><b>Travel Fee:</b>  For travel over 40 miles: $50 + $1.25 per mile.  No fee for locations within 40 miles.</p>
         <div class="d-flex flex-wrap">
-          <p class="mr-4">Motorhome Inspection Points Sheet <a href="#">(download)</a></p>
-          <p>Towables Inspection Points Sheet <a href="#">(download)</a></p>
+          <p class="mr-4 font-weight-medium">Motorhome Inspection Points Sheet <a href="#">(download)</a></p>
+          <p class="font-weight-medium">Towables Inspection Points Sheet <a href="#">(download)</a></p>
         </div>
         <!-- Step 3 -->
         <div class="row mt-4">
@@ -352,7 +349,7 @@
         <!-- Schedule Button -->
         <div class="text-center py-4 my-5">
           <a
-                class="d-none d-md-inline btn btn-primary py-4 my-4 btn-lg px-5 font-weight-bold "
+                class="d-none d-md-inline btn btn-secondary py-4 my-4 btn-lg px-5 font-weight-bold "
                 href="#"
                 role="button"
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
@@ -363,8 +360,8 @@
     </div>
     <!-- Pricing End -->
     <!-- Mission Statement Start -->
+    <img class="ktrv-full-width-image" src="/assets/images/fabian-Xe1SA5kXw5M-unsplash.jpg"/>
     <div class="d-flex ktrv-full-width-image-wrapper overflow-hidden position-relative container-fluid">
-      <img class="ktrv-full-width-image" src="/assets/images/fabian-Xe1SA5kXw5M-unsplash.jpg"/>
 
       <div class="col-12 col-md-8 m-auto text-center text-light ktrv-full-width-image-content p-4">
       <h3 class="display-5">You wouldn’t buy a house without a home inspection... <br>Why should your RV purchase be any different?</h3>
@@ -427,6 +424,10 @@
     </footer>
     <!-- Footer End -->
     <script src="./src/app.ts"></script>
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+    ></script>
     <script>
       document.getElementById(
         "copyright-year"
