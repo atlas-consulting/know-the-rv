@@ -1,60 +1,60 @@
 .ktrv-calendar {
-  flex-wrap: nowrap;
-  padding: $spacing-reg 0 $spacing-lg;
-  justify-content: flex-end;
-  display: flex;
-  z-index: 1;
-  &-wrapper {
-    position: relative;
-  }
-  & .calendar-widget {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    min-height: 200px;
-    overflow: hidden;
-    background-color: $green;
-    background-position: center;
-    background-size: cover;
-    background-image: url("/assets/images/wood-pattern.png");
-    border-radius: 16px;
-    &.mt-n5 {
-      margin-top: -6rem !important;
-    }
-  }
-  & .ktrv-image {
-    position: relative;
+    flex-wrap: nowrap;
+    padding: $spacing-reg 0 $spacing-lg;
+    justify-content: flex-end;
+    display: flex;
     z-index: 1;
-    height: 400px;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-image: url("/assets/images/IMG_9262.jpg");
-  }
+    &-wrapper {
+        position: relative;
+    }
+    & .calendar-widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        min-height: 200px;
+        overflow: hidden;
+        background-color: $green;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/assets/images/wood-pattern.png');
+        border-radius: 16px;
+        &.mt-n5 {
+            margin-top: -6rem !important;
+        }
+    }
+    & .ktrv-image {
+        position: relative;
+        z-index: 1;
+        height: 400px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/assets/images/rv_on_road.jpg');
+    }
 }
 .ripped-paper {
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  max-height: 140px;
-  & img {
-    width: 105%;
-  }
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 140px;
+    & img {
+        width: 105%;
+    }
 }
 
 @media (max-width: 767px) {
-  .ktrv-calendar {
-    padding: $spacing-small 0 0;
-    .ktrv-image {
-      height: 200px;
+    .ktrv-calendar {
+        padding: $spacing-small 0 0;
+        .ktrv-image {
+            height: 200px;
+        }
+        .calendar-widget {
+            position: relative;
+            min-height: 200px;
+        }
     }
-    .calendar-widget {
-      position: relative;
-      min-height: 200px;
-    }
-  }
 }
