@@ -1,21 +1,22 @@
 /* -------------------------------------------------------------------------- */
 /*                                   Imports                                  */
 /* -------------------------------------------------------------------------- */
-@import "./abstract/variables";
-@import "./vendors";
-@import "./layout/grid";
-@import "./components/navigation";
-@import "./components/buttons";
-@import "./components/calendar";
-@import "./components/jumbotron";
-@import "./components/pricing-table";
-@import "./components/footer";
+@import './abstract/variables';
+@import './vendors';
+@import './layout/grid';
+@import './components/navigation';
+@import './components/buttons';
+@import './components/calendar';
+@import './components/confirmation';
+@import './components/jumbotron';
+@import './components/pricing-table';
+@import './components/footer';
 
 html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }

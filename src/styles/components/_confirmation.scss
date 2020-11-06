@@ -1,0 +1,13 @@
+.ktrv-confirmation {
+    &-background {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-self: center;
+        width: 100%;
+        z-index: -1;
+        position: fixed;
+        opacity: 0.4;
+    }
+}
