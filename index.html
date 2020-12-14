@@ -21,10 +21,6 @@
       rel="stylesheet"
     />
     <link
-      href="https://assets.calendly.com/assets/external/widget.css"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
@@ -45,7 +41,7 @@
       <div class="navbar ml-auto pr-0 flex-column">
         <ul class="navbar-nav flex-md-row d-none d-md-flex" id="navbar-links">
           <li class="nav-item px-md-2 active">
-            <a class="nav-link active btn btn-secondary  px-4" href="#">Schedule an inspection</a>
+            <a class="nav-link active btn btn-secondary px-4" href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule" target="__blank">Schedule an inspection</a>
           </li>
           <li class="nav-item px-md-2">
             <a class="nav-link" href="#home">Home</a>
@@ -65,9 +61,9 @@
           <a href="mailto:test@test.com" class="phone-number text-light">
             <i class="fas fa-envelope p-2"></i>
           </a>
-          <a href="tel:6155555555" class="phone-number text-light">
+          <!-- <a href="tel:6155555555" class="phone-number text-light">
             <i class="fas fa-phone p-2"></i>
-          </a>
+          </a> -->
           <i id="menu-icon" class="fas fa-bars p-2"></i>
         </div>
       </div>
@@ -86,10 +82,10 @@
             class="ktrv-call animate__animated animate__fadeIn animate__delay-4s"
           >
             <div class="ktrv-number-wrapper">
-              <div>
+              <!-- <div>
                 <p>Have questions? Call us!</p>
                 <a href="tel:6155555555" class="phone-number">1-(615)-555-5555</a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -110,17 +106,17 @@
             <!-- Fill btn Mobile -->
             <a
               class="d-md-none d-block btn btn-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
-              href="#"
+              href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule"
+              target="__blank"
               role="button"
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
               >Schedule Today!</a
             >
             <!-- Btn -->
             <a
               class="d-none d-md-inline btn btn-secondary btn-lg px-5 font-weight-bold animate__animated animate__fadeIn animate__delay-3s"
-              href="#"
+              href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule"
+              target="__blank"
               role="button"
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
               >Schedule YOUR Inspection Now!</a
             >
           </div>
@@ -157,8 +153,7 @@
             <!-- Calendly link widget begin -->
             <a
               class="btn btn-secondary px-4"
-              href=""
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
+              href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule"
               >Check our availability</a
             >
             <!-- Calendly link widget end -->
@@ -200,8 +195,9 @@
             <p class="">
               Using our 
               <a class="text-primary font-weight-bold" 
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
-              >simple calendar</a>, check availability and choose the timeslot that works best for you. 
+                href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule"
+                target="__blank"
+              >simple calendar</a>, check availability and request the timeslot that works best for you. 
               Once we receive your reservation, we will send some follow up information to iron out the details!
             </p>
           </div>
@@ -251,7 +247,7 @@
                   </li>
                 </ul>
                 <button type="button" class="btn btn-lg px-5 btn-secondary">
-                  Schedule Now
+                  Full Details
                 </button>
               </div>
             </div>
@@ -284,7 +280,7 @@
                   </li>
                 </ul>
                 <button type="button" class="btn btn-lg px-5 btn-secondary">
-                  Schedule Now
+                  Full Details
                 </button>
               </div>
             </div>
@@ -317,7 +313,7 @@
                   </li>
                 </ul>
                 <button type="button" class="btn btn-lg px-5 btn-secondary">
-                  Schedule Now
+                  Full Details
                 </button>
               </div>
             </div>
@@ -350,16 +346,14 @@
         <div class="text-center py-4 my-5">
           <a
                 class="d-none d-md-inline btn btn-secondary py-4 my-4 btn-lg px-5 font-weight-bold "
-                href="#"
+                href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule"
                 role="button"
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
                 >Schedule YOUR Inspection Today!</a
               >
           <a
                 class="d-md-none d-inline btn btn-secondary py-4 my-4 btn-lg px-5 font-weight-bold "
-                href="#"
+                href="https://schedulenow.homegauge.com/11eae3de-5c35-195a-b6f0-391dce0940ab/schedule"
                 role="button"
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jessiewootenvisual/60min'});return false;"
                 >Schedule Today!</a
               >
         </div>
@@ -431,10 +425,6 @@
     </footer>
     <!-- Footer End -->
     <script src="./src/app.ts"></script>
-    <script
-      src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript"
-    ></script>
     <script>
       document.getElementById(
         "copyright-year"
