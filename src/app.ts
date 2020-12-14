@@ -48,7 +48,6 @@ class KnowTheRV {
       (entries) => {
         if (entries[0].isIntersecting) {
           const id = entries[0].target.id;
-          console.log({ id });
           navElements.forEach((el) => {
             el.getAttribute("href") === `#${id}`
               ? el.classList.add("active")
