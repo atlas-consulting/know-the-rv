@@ -6,6 +6,11 @@
     z-index: 1;
     &-wrapper {
         position: relative;
+        & img.certification {
+            width: 120px;
+            top: 0;
+            right: 0;
+        }
     }
     & .calendar-widget {
         position: absolute;
