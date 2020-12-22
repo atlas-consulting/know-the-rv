@@ -19,6 +19,12 @@ class KnowTheRV {
         ? navLinks?.classList.remove(mobileCssClass)
         : navLinks?.classList.add(mobileCssClass);
     });
+    navLinks?.addEventListener("click", () => {
+      const isMobileMenuOpened = navLinks?.classList.contains(mobileCssClass);
+      if(isMobileMenuOpened) {
+        navLinks?.classList.remove(mobileCssClass)
+      }
+    });
   }
   startCarousel() {
     let index = 0;
