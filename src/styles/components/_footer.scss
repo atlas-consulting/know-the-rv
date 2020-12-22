@@ -1,15 +1,15 @@
 footer {
-  min-height: 180px;
-  background-color: $green;
-  width: 100%;
-  position: relative;
+    min-height: 100px;
+    background-color: $green;
+    width: 100%;
+    position: relative;
 
-  & .certifications {
-    position: absolute;
-    left: 4rem;
-    top: -40px;
-    & img {
-      height: 80px;
+    & .certifications {
+        position: absolute;
+        left: 4rem;
+        top: -40px;
+        & img {
+            height: 80px;
+        }
     }
-  }
 }
