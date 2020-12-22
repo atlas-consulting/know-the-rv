@@ -1,34 +1,47 @@
 .btn {
-  border-radius: 50px;
-  &-outline-secondary {
-    border-color: $orange;
-    color: $white;
-    &:hover {
-      color: $white;
-      border-color: $orange;
-      background-color: $orange;
+    border-radius: 50px;
+    &-outline-secondary {
+        border-color: $orange;
+        color: $white;
+        &:hover {
+            color: $white;
+            border-color: $orange;
+            background-color: $orange;
+        }
+        &:active,
+        &:focus {
+            color: $white;
+            border-color: $orange;
+            background-color: $orange;
+        }
     }
-  }
-  &-secondary {
-    border-color: $orange;
-    background-color: $orange;
-    color: $white;
-    &:hover {
-      font-weight: 500;
-      border-color: lighten($orange, 7%);
-      background-color: lighten($orange, 7%);
-      transform: translate3d(1px, 1px, 0);
+    &-secondary {
+        border-color: $orange;
+        background-color: $orange;
+        color: $white;
+        &:hover {
+            font-weight: 500;
+            border-color: lighten($orange, 7%);
+            background-color: lighten($orange, 7%);
+            transform: translate3d(1px, 1px, 0);
+        }
+        &:active,
+        &:focus {
+            font-weight: 500;
+            border-color: lighten($orange, 7%);
+            background-color: lighten($orange, 7%);
+            transform: translate3d(2px, 2px, 0);
+        }
     }
-  }
-  &-primary {
-    border-color: $green;
-    background-color: $green;
-    color: $white;
-    &:hover {
-      font-weight: 500;
-      border-color: lighten($green, 5%);
-      background-color: lighten($green, 5%);
-      transform: translate3d(1px, 1px, 0);
+    &-primary {
+        border-color: $green;
+        background-color: $green;
+        color: $white;
+        &:hover {
+            font-weight: 500;
+            border-color: lighten($green, 5%);
+            background-color: lighten($green, 5%);
+            transform: translate3d(1px, 1px, 0);
+        }
     }
-  }
 }

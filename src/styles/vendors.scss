@@ -1,27 +1,33 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 .container,
 .container-fluid {
-  z-index: 5;
-  position: relative;
+    z-index: 5;
+    position: relative;
 }
 .text-primary {
-  color: $green !important;
+    color: $green !important;
 }
 .bg-primary {
-  background-color: $green !important;
+    background-color: $green !important;
 }
 .text-secondary {
-  color: $orange !important;
+    color: $orange !important;
 }
 .bg-secondary {
-  background-color: $orange !important;
+    background-color: $orange !important;
 }
 
 .text-muted {
-  color: #c5c8cc !important;
+    color: #c5c8cc !important;
 }
 
 .btn-outline-secondary {
-  border-color: $orange;
-  color: $white;
+    border-color: $orange;
+    color: $white;
+}
+.btn-secondary,
+.btn-secondary:not(:disabled) {
+    border-color: $orange !important;
+    color: $white !important;
+    background: $orange !important;
 }
