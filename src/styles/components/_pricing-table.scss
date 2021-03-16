@@ -2,6 +2,9 @@
   background-color: $pink;
   & .card {
     transition: 0.2s;
+    &.featured h3 {
+      color: $orange;
+    }
     &:hover {
       transform: translate3d(0, 2px, 0);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,6 +22,11 @@
   }
 }
 
+@media (min-width: 991px) {
+  .ktrv-pricing .card.featured {
+    transform: scale3d(1.075,1.075,1);
+  }
+}
 @media (max-width: 991px) {
   .ktrv-pricing {
     .card-deck {
